@@ -15,9 +15,9 @@ app.get("/index",function(req,res){
 app.get("/registro",function(req,res){
  res.render('registro');
 });
-app.get("/appcitas/citas",function(req,res){
+/*app.get("/appcitas/citas",function(req,res){
  res.render('citas');
-});
+});*/
 
 
 app.listen(3000);
