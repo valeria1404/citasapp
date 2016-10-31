@@ -12,12 +12,19 @@ app.get("/",function(req,res){
 app.get("/index",function(req,res){
  res.render('index');
 });
+
 app.get("/registro",function(req,res){
  res.render('registro');
 });
-/*app.get("/appcitas/citas",function(req,res){
- res.render('citas');
-});*/
+
+app.get("/citas/:id?",function(req,res){
+  var params = req.id;
+  /*find a mongodb*/
+  res.render('citas',{
+    name_user : "hola"
+  });
+});
+
 
 
 app.listen(3000);
